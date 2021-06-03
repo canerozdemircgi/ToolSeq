@@ -1,0 +1,26 @@
+QComboBox QAbstractItemView::item
+{
+	height: 25px;
+}
+
+QListWidget::item
+{
+	height: 25px;
+}
+
+QScrollBar:horizontal
+{
+	height: 15px;
+	margin: 0;
+}
+
+QScrollBar:vertical
+{
+	width: 15px;
+	margin: 0;
+}
+
+QTabBar::tab
+{
+	height: 25px;
+}

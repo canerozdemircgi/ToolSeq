@@ -1,0 +1,8 @@
+*.ffs_batch
+*.ffs_real
+*.mel
+*.py
+*.qss
+*.svg
+*.txt
+*.ui

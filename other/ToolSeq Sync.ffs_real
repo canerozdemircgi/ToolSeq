@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="REAL" XmlFormat="2">
+	<Directories>
+		<Item>C:\Users\User\Downloads\ToolSeq</Item>
+		<Item>C:\Users\User\Documents\maya\2020</Item>
+	</Directories>
+	<Delay>3</Delay>
+	<Commandline>"C:\Program Files\FreeFileSync\FreeFileSync.exe" "C:\Users\User\Downloads\ToolSeq\other\ToolSeq Sync.ffs_batch"</Commandline>
+</FreeFileSync>
