@@ -1,0 +1,3322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>WindowMain</class>
+	<widget class="QMainWindow" name="WindowMain">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>370</width>
+				<height>397</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>Randomizer</string>
+		</property>
+		<property name="windowIcon">
+			<iconset>
+				<normaloff>../icons/ToolSeq.svg</normaloff>../icons/ToolSeq.svg
+			</iconset>
+		</property>
+		<widget class="QWidget" name="Widget_00">
+			<layout class="QVBoxLayout" name="verticalLayout">
+				<property name="spacing">
+					<number>2</number>
+				</property>
+				<property name="leftMargin">
+					<number>2</number>
+				</property>
+				<property name="topMargin">
+					<number>2</number>
+				</property>
+				<property name="rightMargin">
+					<number>2</number>
+				</property>
+				<property name="bottomMargin">
+					<number>2</number>
+				</property>
+				<item>
+					<widget class="QWidget" name="Widget_01" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_9">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QSplitter" name="Splitter_1">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="orientation">
+										<enum>Qt::Horizontal</enum>
+									</property>
+									<property name="handleWidth">
+										<number>2</number>
+									</property>
+									<widget class="QWidget" name="Widget_011" native="true">
+										<layout class="QVBoxLayout" name="verticalLayout_8">
+											<property name="spacing">
+												<number>2</number>
+											</property>
+											<property name="leftMargin">
+												<number>0</number>
+											</property>
+											<property name="topMargin">
+												<number>0</number>
+											</property>
+											<property name="rightMargin">
+												<number>0</number>
+											</property>
+											<property name="bottomMargin">
+												<number>0</number>
+											</property>
+											<item>
+												<widget class="QSplitter" name="Splitter_2">
+													<property name="orientation">
+														<enum>Qt::Vertical</enum>
+													</property>
+													<property name="handleWidth">
+														<number>2</number>
+													</property>
+													<widget class="QWidget" name="Widget_0111" native="true">
+														<layout class="QVBoxLayout" name="verticalLayout_6">
+															<property name="spacing">
+																<number>0</number>
+															</property>
+															<property name="leftMargin">
+																<number>0</number>
+															</property>
+															<property name="topMargin">
+																<number>0</number>
+															</property>
+															<property name="rightMargin">
+																<number>0</number>
+															</property>
+															<property name="bottomMargin">
+																<number>0</number>
+															</property>
+															<item>
+																<widget class="QWidget" name="Widget_ItemsHead" native="true">
+																	<property name="styleSheet">
+																		<string notr="true">#Widget_ItemsHead{border-top: 1px solid #2b2b2b;border-right: 1px solid #2b2b2b;border-top-right-radius: 4px;}</string>
+																	</property>
+																	<layout class="QHBoxLayout" name="horizontalLayout_29">
+																		<property name="spacing">
+																			<number>5</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>5</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QLabel" name="label_6">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>Items</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QLabel" name="label_5">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>:</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QLabel" name="Label_ItemsCount">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>0</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QWidget" name="widget_011111" native="true">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<layout class="QHBoxLayout" name="horizontalLayout">
+																					<property name="spacing">
+																						<number>0</number>
+																					</property>
+																					<property name="leftMargin">
+																						<number>0</number>
+																					</property>
+																					<property name="topMargin">
+																						<number>0</number>
+																					</property>
+																					<property name="rightMargin">
+																						<number>0</number>
+																					</property>
+																					<property name="bottomMargin">
+																						<number>0</number>
+																					</property>
+																					<item>
+																						<widget class="QCheckBox" name="Check_ItemsFlatten">
+																							<property name="enabled">
+																								<bool>false</bool>
+																							</property>
+																							<property name="sizePolicy">
+																								<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																									<horstretch>0</horstretch>
+																									<verstretch>0</verstretch>
+																								</sizepolicy>
+																							</property>
+																							<property name="minimumSize">
+																								<size>
+																									<width>0</width>
+																									<height>25</height>
+																								</size>
+																							</property>
+																							<property name="layoutDirection">
+																								<enum>Qt::RightToLeft</enum>
+																							</property>
+																							<property name="text">
+																								<string>Flat</string>
+																							</property>
+																						</widget>
+																					</item>
+																					<item>
+																						<widget class="QCheckBox" name="Check_ItemsSet">
+																							<property name="sizePolicy">
+																								<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																									<horstretch>0</horstretch>
+																									<verstretch>0</verstretch>
+																								</sizepolicy>
+																							</property>
+																							<property name="minimumSize">
+																								<size>
+																									<width>0</width>
+																									<height>25</height>
+																								</size>
+																							</property>
+																							<property name="layoutDirection">
+																								<enum>Qt::RightToLeft</enum>
+																							</property>
+																							<property name="text">
+																								<string>Set</string>
+																							</property>
+																						</widget>
+																					</item>
+																				</layout>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+															<item>
+																<widget class="QWidget" name="Widget_01112" native="true">
+																	<layout class="QHBoxLayout" name="horizontalLayout_4">
+																		<property name="spacing">
+																			<number>2</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QPlainTextEdit" name="Text_Items">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="contextMenuPolicy">
+																					<enum>Qt::CustomContextMenu</enum>
+																				</property>
+																				<property name="lineWrapMode">
+																					<enum>QPlainTextEdit::NoWrap</enum>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+														</layout>
+													</widget>
+													<widget class="QWidget" name="Widget_PreCommands" native="true">
+														<layout class="QVBoxLayout" name="verticalLayout_7">
+															<property name="spacing">
+																<number>0</number>
+															</property>
+															<property name="leftMargin">
+																<number>0</number>
+															</property>
+															<property name="topMargin">
+																<number>0</number>
+															</property>
+															<property name="rightMargin">
+																<number>0</number>
+															</property>
+															<property name="bottomMargin">
+																<number>0</number>
+															</property>
+															<item>
+																<widget class="QWidget" name="Widget_PreCommandsHead" native="true">
+																	<property name="styleSheet">
+																		<string notr="true">#Widget_PreCommandsHead{border-top: 1px solid #2b2b2b;border-right: 1px solid #2b2b2b;border-top-right-radius: 4px;}</string>
+																	</property>
+																	<layout class="QHBoxLayout" name="horizontalLayout_13">
+																		<property name="spacing">
+																			<number>5</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>5</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QLabel" name="label_13">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>Pre-Commands</string>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+															<item>
+																<widget class="QWidget" name="Widget_01132" native="true">
+																	<layout class="QHBoxLayout" name="horizontalLayout_14">
+																		<property name="spacing">
+																			<number>2</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QPlainTextEdit" name="Text_PreCommands">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="contextMenuPolicy">
+																					<enum>Qt::CustomContextMenu</enum>
+																				</property>
+																				<property name="lineWrapMode">
+																					<enum>QPlainTextEdit::NoWrap</enum>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+														</layout>
+													</widget>
+												</widget>
+											</item>
+										</layout>
+									</widget>
+									<widget class="QWidget" name="Widget_012" native="true">
+										<layout class="QVBoxLayout" name="verticalLayout_9">
+											<property name="spacing">
+												<number>2</number>
+											</property>
+											<property name="leftMargin">
+												<number>0</number>
+											</property>
+											<property name="topMargin">
+												<number>0</number>
+											</property>
+											<property name="rightMargin">
+												<number>0</number>
+											</property>
+											<property name="bottomMargin">
+												<number>0</number>
+											</property>
+											<item>
+												<widget class="QSplitter" name="Splitter_3">
+													<property name="orientation">
+														<enum>Qt::Vertical</enum>
+													</property>
+													<property name="handleWidth">
+														<number>2</number>
+													</property>
+													<widget class="QWidget" name="Widget_Internals" native="true">
+														<layout class="QVBoxLayout" name="verticalLayout_2">
+															<property name="spacing">
+																<number>0</number>
+															</property>
+															<property name="leftMargin">
+																<number>0</number>
+															</property>
+															<property name="topMargin">
+																<number>0</number>
+															</property>
+															<property name="rightMargin">
+																<number>0</number>
+															</property>
+															<property name="bottomMargin">
+																<number>0</number>
+															</property>
+															<item>
+																<widget class="QWidget" name="Widget_InternalsHead" native="true">
+																	<property name="styleSheet">
+																		<string notr="true">#Widget_InternalsHead{border-top: 1px solid #2b2b2b;border-left: 1px solid #2b2b2b;border-top-left-radius: 4px;}</string>
+																	</property>
+																	<layout class="QHBoxLayout" name="horizontalLayout_3">
+																		<property name="spacing">
+																			<number>5</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>5</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QLabel" name="Label_Internals">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>Attributes</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QLabel" name="label_10">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>:</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QLabel" name="Label_InternalsCount">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>0</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QCheckBox" name="Check_InternalsSet">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="layoutDirection">
+																					<enum>Qt::RightToLeft</enum>
+																				</property>
+																				<property name="text">
+																					<string>Set</string>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+															<item>
+																<widget class="QWidget" name="Widget_01212" native="true">
+																	<layout class="QHBoxLayout" name="horizontalLayout_5">
+																		<property name="spacing">
+																			<number>2</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QPlainTextEdit" name="Text_Internals">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="lineWrapMode">
+																					<enum>QPlainTextEdit::NoWrap</enum>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+														</layout>
+													</widget>
+													<widget class="QWidget" name="Widget_Randoms" native="true">
+														<layout class="QVBoxLayout" name="verticalLayout_3">
+															<property name="spacing">
+																<number>0</number>
+															</property>
+															<property name="leftMargin">
+																<number>0</number>
+															</property>
+															<property name="topMargin">
+																<number>0</number>
+															</property>
+															<property name="rightMargin">
+																<number>0</number>
+															</property>
+															<property name="bottomMargin">
+																<number>0</number>
+															</property>
+															<item>
+																<widget class="QWidget" name="Widget_RandomsHead" native="true">
+																	<property name="styleSheet">
+																		<string notr="true">#Widget_RandomsHead{border-top: 1px solid #2b2b2b;border-left: 1px solid #2b2b2b;border-top-left-radius: 4px;}</string>
+																	</property>
+																	<layout class="QHBoxLayout" name="horizontalLayout_7">
+																		<property name="spacing">
+																			<number>5</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>5</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QLabel" name="label_11">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>Randoms</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QLabel" name="label_12">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>:</string>
+																				</property>
+																			</widget>
+																		</item>
+																		<item>
+																			<widget class="QLabel" name="Label_RandomsCount">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>0</string>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+															<item>
+																<widget class="QWidget" name="Widget_01222" native="true">
+																	<layout class="QHBoxLayout" name="horizontalLayout_8">
+																		<property name="spacing">
+																			<number>2</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QPlainTextEdit" name="Text_Randoms">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="lineWrapMode">
+																					<enum>QPlainTextEdit::NoWrap</enum>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+														</layout>
+													</widget>
+													<widget class="QWidget" name="Widget_PostCommands" native="true">
+														<layout class="QVBoxLayout" name="verticalLayout_4">
+															<property name="spacing">
+																<number>0</number>
+															</property>
+															<property name="leftMargin">
+																<number>0</number>
+															</property>
+															<property name="topMargin">
+																<number>0</number>
+															</property>
+															<property name="rightMargin">
+																<number>0</number>
+															</property>
+															<property name="bottomMargin">
+																<number>0</number>
+															</property>
+															<item>
+																<widget class="QWidget" name="Widget_PostCommandsHead" native="true">
+																	<property name="styleSheet">
+																		<string notr="true">#Widget_PostCommandsHead{border-top: 1px solid #2b2b2b;border-left: 1px solid #2b2b2b;border-top-left-radius: 4px;}</string>
+																	</property>
+																	<layout class="QHBoxLayout" name="horizontalLayout_15">
+																		<property name="spacing">
+																			<number>5</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>5</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QLabel" name="label_15">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="text">
+																					<string>Post-Commands</string>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+															<item>
+																<widget class="QWidget" name="Widget_01232" native="true">
+																	<layout class="QHBoxLayout" name="horizontalLayout_16">
+																		<property name="spacing">
+																			<number>2</number>
+																		</property>
+																		<property name="leftMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="topMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="rightMargin">
+																			<number>0</number>
+																		</property>
+																		<property name="bottomMargin">
+																			<number>0</number>
+																		</property>
+																		<item>
+																			<widget class="QPlainTextEdit" name="Text_PostCommands">
+																				<property name="sizePolicy">
+																					<sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+																						<horstretch>0</horstretch>
+																						<verstretch>0</verstretch>
+																					</sizepolicy>
+																				</property>
+																				<property name="minimumSize">
+																					<size>
+																						<width>0</width>
+																						<height>25</height>
+																					</size>
+																				</property>
+																				<property name="contextMenuPolicy">
+																					<enum>Qt::CustomContextMenu</enum>
+																				</property>
+																				<property name="lineWrapMode">
+																					<enum>QPlainTextEdit::NoWrap</enum>
+																				</property>
+																			</widget>
+																		</item>
+																	</layout>
+																</widget>
+															</item>
+														</layout>
+													</widget>
+												</widget>
+											</item>
+										</layout>
+									</widget>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_02" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_10">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QTabWidget" name="Tab_Main">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="currentIndex">
+										<number>0</number>
+									</property>
+									<widget class="QWidget" name="Widget_021">
+										<attribute name="title">
+											<string>Mode</string>
+										</attribute>
+										<layout class="QVBoxLayout" name="verticalLayout_5">
+											<property name="spacing">
+												<number>2</number>
+											</property>
+											<property name="leftMargin">
+												<number>1</number>
+											</property>
+											<property name="topMargin">
+												<number>1</number>
+											</property>
+											<property name="rightMargin">
+												<number>1</number>
+											</property>
+											<property name="bottomMargin">
+												<number>1</number>
+											</property>
+											<item>
+												<widget class="QWidget" name="Widget_0211" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_2">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeObject">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Object</string>
+																</property>
+																<property name="checked">
+																	<bool>true</bool>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="Widget_ModeObjectRelative" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<layout class="QHBoxLayout" name="horizontalLayout_30">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QCheckBox" name="Check_ModeObjectRelative">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>Rel</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QComboBox" name="Combo_ModeObjectRelative">
+																			<property name="enabled">
+																				<bool>false</bool>
+																			</property>
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="currentIndex">
+																				<number>0</number>
+																			</property>
+																			<item>
+																				<property name="text">
+																					<string>+</string>
+																				</property>
+																			</item>
+																			<item>
+																				<property name="text">
+																					<string>*</string>
+																				</property>
+																			</item>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeComponent">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Component</string>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="Widget_02111" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0212" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_12">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeInterpolate">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Interpolate</string>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeSelect">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Select</string>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeMaterial">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Material</string>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeCommand">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Command</string>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0213" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,1,2">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeColor">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Color</string>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+														<item>
+															<widget class="QComboBox" name="Combo_ModeColorType">
+																<property name="enabled">
+																	<bool>false</bool>
+																</property>
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="currentIndex">
+																	<number>1</number>
+																</property>
+																<item>
+																	<property name="text">
+																		<string>Gray</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>RGB</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>HSV</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>HSL</string>
+																	</property>
+																</item>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="Widget_ColorMode" native="true">
+																<property name="enabled">
+																	<bool>false</bool>
+																</property>
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<layout class="QHBoxLayout" name="horizontalLayout_19">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QComboBox" name="Combo_ModeColorMethod">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="currentIndex">
+																				<number>1</number>
+																			</property>
+																			<item>
+																				<property name="text">
+																					<string>Direct</string>
+																				</property>
+																			</item>
+																			<item>
+																				<property name="text">
+																					<string>Find</string>
+																				</property>
+																			</item>
+																			<item>
+																				<property name="text">
+																					<string>Assign</string>
+																				</property>
+																			</item>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QComboBox" name="Combo_ModeColorMaterialType">
+																			<property name="enabled">
+																				<bool>false</bool>
+																			</property>
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="editable">
+																				<bool>true</bool>
+																			</property>
+																			<property name="currentIndex">
+																				<number>0</number>
+																			</property>
+																			<item>
+																				<property name="text">
+																					<string>lambert</string>
+																				</property>
+																			</item>
+																			<item>
+																				<property name="text">
+																					<string>blinn</string>
+																				</property>
+																			</item>
+																			<item>
+																				<property name="text">
+																					<string>phong</string>
+																				</property>
+																			</item>
+																			<item>
+																				<property name="text">
+																					<string>surfaceShader</string>
+																				</property>
+																			</item>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0214" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_17">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QRadioButton" name="Radio_ModeReplace">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Replace</string>
+																</property>
+																<attribute name="buttonGroup">
+																	<string notr="true">ButtonGroup_Mode</string>
+																</attribute>
+															</widget>
+														</item>
+														<item>
+															<widget class="QComboBox" name="Combo_ModeReplaceMethod">
+																<property name="enabled">
+																	<bool>false</bool>
+																</property>
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="currentIndex">
+																	<number>0</number>
+																</property>
+																<item>
+																	<property name="text">
+																		<string>Copy</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Instance</string>
+																	</property>
+																</item>
+															</widget>
+														</item>
+														<item>
+															<widget class="QComboBox" name="Combo_ModeReplacePivot">
+																<property name="enabled">
+																	<bool>false</bool>
+																</property>
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="currentIndex">
+																	<number>0</number>
+																</property>
+																<item>
+																	<property name="text">
+																		<string>RotPiv</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>ScaPiv</string>
+																	</property>
+																</item>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="Widget_02141" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<layout class="QHBoxLayout" name="horizontalLayout_31">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QCheckBox" name="Check_ModeReplaceRotate">
+																			<property name="enabled">
+																				<bool>false</bool>
+																			</property>
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>Rot</string>
+																			</property>
+																			<property name="checked">
+																				<bool>true</bool>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QCheckBox" name="Check_ModeReplaceScale">
+																			<property name="enabled">
+																				<bool>false</bool>
+																			</property>
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>Sca</string>
+																			</property>
+																			<property name="checked">
+																				<bool>true</bool>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+										</layout>
+									</widget>
+									<widget class="QWidget" name="Widget_Function">
+										<attribute name="title">
+											<string>Function</string>
+										</attribute>
+										<layout class="QVBoxLayout" name="verticalLayout_11">
+											<property name="spacing">
+												<number>2</number>
+											</property>
+											<property name="leftMargin">
+												<number>1</number>
+											</property>
+											<property name="topMargin">
+												<number>1</number>
+											</property>
+											<property name="rightMargin">
+												<number>1</number>
+											</property>
+											<property name="bottomMargin">
+												<number>1</number>
+											</property>
+											<item>
+												<widget class="QWidget" name="Widget_0221" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_20" stretch="2,1,1">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QComboBox" name="Combo_FunctFormula">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="currentIndex">
+																	<number>0</number>
+																</property>
+																<item>
+																	<property name="text">
+																		<string>uniform</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>triangular</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>betavariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>expovariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>gammavariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>gauss</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>lognormvariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>normalvariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>paretovariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>vonmisesvariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>weibullvariate</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>solo</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>custom</string>
+																	</property>
+																</item>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_FunctInsert">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Insert</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="Widget_02211" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0222" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_21">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QComboBox" name="Combo_FunctQuantity">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="currentIndex">
+																	<number>0</number>
+																</property>
+																<item>
+																	<property name="text">
+																		<string>Single</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Seq 1&gt;2</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Seq 2&gt;1</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Percent</string>
+																	</property>
+																</item>
+															</widget>
+														</item>
+														<item>
+															<widget class="QComboBox" name="Combo_FunctLimit">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="currentIndex">
+																	<number>0</number>
+																</property>
+																<item>
+																	<property name="text">
+																		<string>Free</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Clamp</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Return</string>
+																	</property>
+																</item>
+															</widget>
+														</item>
+														<item>
+															<widget class="QDoubleSpinBox" name="Float_FunctLimitMin">
+																<property name="enabled">
+																	<bool>false</bool>
+																</property>
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="alignment">
+																	<set>Qt::AlignCenter</set>
+																</property>
+																<property name="buttonSymbols">
+																	<enum>QAbstractSpinBox::PlusMinus</enum>
+																</property>
+																<property name="decimals">
+																	<number>5</number>
+																</property>
+																<property name="minimum">
+																	<double>-999999999.000000000000000</double>
+																</property>
+																<property name="maximum">
+																	<double>999999999.000000000000000</double>
+																</property>
+																<property name="singleStep">
+																	<double>0.100000000000000</double>
+																</property>
+																<property name="value">
+																	<double>-1.000000000000000</double>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QDoubleSpinBox" name="Float_FunctLimitMax">
+																<property name="enabled">
+																	<bool>false</bool>
+																</property>
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="layoutDirection">
+																	<enum>Qt::RightToLeft</enum>
+																</property>
+																<property name="alignment">
+																	<set>Qt::AlignCenter</set>
+																</property>
+																<property name="buttonSymbols">
+																	<enum>QAbstractSpinBox::PlusMinus</enum>
+																</property>
+																<property name="decimals">
+																	<number>5</number>
+																</property>
+																<property name="minimum">
+																	<double>-999999999.000000000000000</double>
+																</property>
+																<property name="maximum">
+																	<double>999999999.000000000000000</double>
+																</property>
+																<property name="value">
+																	<double>1.000000000000000</double>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0223" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_24">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QCheckBox" name="Check_FunctInterval">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Interval</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QCheckBox" name="Check_FunctExclude">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Exclude</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QComboBox" name="Combo_FunctSorting">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="currentIndex">
+																	<number>0</number>
+																</property>
+																<item>
+																	<property name="text">
+																		<string>Unsort</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Small&gt;Big</string>
+																	</property>
+																</item>
+																<item>
+																	<property name="text">
+																		<string>Big&gt;Small</string>
+																	</property>
+																</item>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_11" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0224" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_28">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QCheckBox" name="Check_FunctPreCommands">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Pre-Cmd</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QCheckBox" name="Check_FunctPostCommands">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Post-Cmd</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_5" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_4" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+										</layout>
+									</widget>
+									<widget class="QWidget" name="Widget_Filter">
+										<attribute name="title">
+											<string>Filter</string>
+										</attribute>
+										<layout class="QVBoxLayout" name="verticalLayout_14">
+											<property name="spacing">
+												<number>2</number>
+											</property>
+											<property name="leftMargin">
+												<number>1</number>
+											</property>
+											<property name="topMargin">
+												<number>1</number>
+											</property>
+											<property name="rightMargin">
+												<number>1</number>
+											</property>
+											<property name="bottomMargin">
+												<number>1</number>
+											</property>
+											<item>
+												<widget class="QWidget" name="Widget_0231" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_23" stretch="1,3">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QCheckBox" name="Check_FilterPattern">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Pattern</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QLineEdit" name="Line_FilterPatternFormula">
+																<property name="enabled">
+																	<bool>false</bool>
+																</property>
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_FilterPatternDetails1" native="true">
+													<property name="enabled">
+														<bool>false</bool>
+													</property>
+													<layout class="QHBoxLayout" name="horizontalLayout_34">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QWidget" name="widget_9" native="true">
+																<layout class="QHBoxLayout" name="horizontalLayout_36">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QLabel" name="label_24">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>CumulP</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QLineEdit" name="Line_FilterPatternCumulP">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>+C</string>
+																			</property>
+																			<property name="alignment">
+																				<set>Qt::AlignCenter</set>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_8" native="true">
+																<layout class="QHBoxLayout" name="horizontalLayout_35">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QLabel" name="label_22">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>CumulN</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QLineEdit" name="Line_FilterPatternCumulN">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>-C</string>
+																			</property>
+																			<property name="alignment">
+																				<set>Qt::AlignCenter</set>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_6" native="true">
+																<layout class="QHBoxLayout" name="horizontalLayout_32">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QLabel" name="label_18">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>Unique</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QLineEdit" name="Line_FilterPatternUnique">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>U</string>
+																			</property>
+																			<property name="alignment">
+																				<set>Qt::AlignCenter</set>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_7" native="true">
+																<layout class="QHBoxLayout" name="horizontalLayout_33">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QLabel" name="label_20">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>Same</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QLineEdit" name="Line_FilterPatternSame">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>S</string>
+																			</property>
+																			<property name="alignment">
+																				<set>Qt::AlignCenter</set>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_FilterPatternDetails2" native="true">
+													<property name="enabled">
+														<bool>false</bool>
+													</property>
+													<layout class="QHBoxLayout" name="horizontalLayout_41">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QWidget" name="widget_10" native="true">
+																<layout class="QHBoxLayout" name="horizontalLayout_39">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QLabel" name="label_30">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>MirrorP</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QLineEdit" name="Line_FilterPatternMirrorP">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>+M</string>
+																			</property>
+																			<property name="alignment">
+																				<set>Qt::AlignCenter</set>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_13" native="true">
+																<layout class="QHBoxLayout" name="horizontalLayout_40">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QLabel" name="label_32">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>MirrorN</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QLineEdit" name="Line_FilterPatternMirrorN">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>-M</string>
+																			</property>
+																			<property name="alignment">
+																				<set>Qt::AlignCenter</set>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_3" native="true">
+																<layout class="QHBoxLayout" name="horizontalLayout_22">
+																	<property name="spacing">
+																		<number>2</number>
+																	</property>
+																	<property name="leftMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="topMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="rightMargin">
+																		<number>0</number>
+																	</property>
+																	<property name="bottomMargin">
+																		<number>0</number>
+																	</property>
+																	<item>
+																		<widget class="QLabel" name="label_7">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>Default</string>
+																			</property>
+																		</widget>
+																	</item>
+																	<item>
+																		<widget class="QLineEdit" name="Line_FilterPatternDefault">
+																			<property name="sizePolicy">
+																				<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																					<horstretch>0</horstretch>
+																					<verstretch>0</verstretch>
+																				</sizepolicy>
+																			</property>
+																			<property name="minimumSize">
+																				<size>
+																					<width>0</width>
+																					<height>25</height>
+																				</size>
+																			</property>
+																			<property name="text">
+																				<string>D</string>
+																			</property>
+																			<property name="alignment">
+																				<set>Qt::AlignCenter</set>
+																			</property>
+																		</widget>
+																	</item>
+																</layout>
+															</widget>
+														</item>
+														<item>
+															<widget class="QDoubleSpinBox" name="Float_FilterPatternDefault">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="alignment">
+																	<set>Qt::AlignCenter</set>
+																</property>
+																<property name="buttonSymbols">
+																	<enum>QAbstractSpinBox::PlusMinus</enum>
+																</property>
+																<property name="decimals">
+																	<number>5</number>
+																</property>
+																<property name="minimum">
+																	<double>-999999999.000000000000000</double>
+																</property>
+																<property name="maximum">
+																	<double>999999999.000000000000000</double>
+																</property>
+																<property name="singleStep">
+																	<double>0.100000000000000</double>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0234" native="true"/>
+											</item>
+										</layout>
+									</widget>
+									<widget class="QWidget" name="Widget_Preset">
+										<attribute name="title">
+											<string>Preset</string>
+										</attribute>
+										<layout class="QVBoxLayout" name="verticalLayout_12">
+											<property name="spacing">
+												<number>2</number>
+											</property>
+											<property name="leftMargin">
+												<number>1</number>
+											</property>
+											<property name="topMargin">
+												<number>1</number>
+											</property>
+											<property name="rightMargin">
+												<number>1</number>
+											</property>
+											<property name="bottomMargin">
+												<number>1</number>
+											</property>
+											<item>
+												<widget class="QWidget" name="Widget_0241" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_11">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QPushButton" name="Button_PresetBevel">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Bevel</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetChamfer">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Chamfer</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_17" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetDefault">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Default</string>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0242" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_25">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QPushButton" name="Button_PresetExtrudeV">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Extrude V</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetExtrudeE">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Extrude E</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetExtrudeF">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Extrude F</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QWidget" name="widget_14" native="true">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0243" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_26">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QPushButton" name="Button_PresetPaintGray">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Paint Gray</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetPaintRGB">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Paint RGB</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetPaintHSV">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Paint HSV</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetPaintHSL">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Paint HSL</string>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+											<item>
+												<widget class="QWidget" name="Widget_0244" native="true">
+													<layout class="QHBoxLayout" name="horizontalLayout_27">
+														<property name="spacing">
+															<number>2</number>
+														</property>
+														<property name="leftMargin">
+															<number>0</number>
+														</property>
+														<property name="topMargin">
+															<number>0</number>
+														</property>
+														<property name="rightMargin">
+															<number>0</number>
+														</property>
+														<property name="bottomMargin">
+															<number>0</number>
+														</property>
+														<item>
+															<widget class="QPushButton" name="Button_PresetWireGray">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Wire Gray</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetWireRGB">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Wire RGB</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetWireHSV">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Wire HSV</string>
+																</property>
+															</widget>
+														</item>
+														<item>
+															<widget class="QPushButton" name="Button_PresetWireHSL">
+																<property name="sizePolicy">
+																	<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+																		<horstretch>0</horstretch>
+																		<verstretch>0</verstretch>
+																	</sizepolicy>
+																</property>
+																<property name="minimumSize">
+																	<size>
+																		<width>0</width>
+																		<height>25</height>
+																	</size>
+																</property>
+																<property name="text">
+																	<string>Wire HSL</string>
+																</property>
+															</widget>
+														</item>
+													</layout>
+												</widget>
+											</item>
+										</layout>
+									</widget>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_03" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_6">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QPushButton" name="Button_Randomize">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Randomize</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+			</layout>
+		</widget>
+	</widget>
+	<resources/>
+	<connections>
+		<connection>
+			<sender>Radio_ModeColor</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Widget_ColorMode</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>37</x>
+					<y>322</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>214</x>
+					<y>322</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Check_FunctPostCommands</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Widget_PostCommands</receiver>
+			<slot>setVisible(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>183</x>
+					<y>324</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>276</x>
+					<y>193</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Radio_ModeObject</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Widget_ModeObjectRelative</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>37</x>
+					<y>267</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>141</x>
+					<y>272</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Check_FunctPreCommands</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Widget_PreCommands</receiver>
+			<slot>setVisible(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>111</x>
+					<y>324</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>92</x>
+					<y>193</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Radio_ModeReplace</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Check_ModeReplaceScale</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>37</x>
+					<y>349</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>249</x>
+					<y>349</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Radio_ModeColor</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Combo_ModeColorType</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>37</x>
+					<y>322</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>108</x>
+					<y>322</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Radio_ModeReplace</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Check_ModeReplaceRotate</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>37</x>
+					<y>349</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>178</x>
+					<y>349</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Check_FilterPattern</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Line_FilterPatternFormula</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>49</x>
+					<y>272</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>233</x>
+					<y>272</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Check_FilterPattern</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Widget_FilterPatternDetails1</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>49</x>
+					<y>272</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>187</x>
+					<y>299</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Check_FilterPattern</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Widget_FilterPatternDetails2</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>49</x>
+					<y>272</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>187</x>
+					<y>327</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Radio_ModeReplace</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Combo_ModeReplaceMethod</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>49</x>
+					<y>354</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>141</x>
+					<y>354</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Check_ModeObjectRelative</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Combo_ModeObjectRelative</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>115</x>
+					<y>272</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>161</x>
+					<y>272</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>Radio_ModeReplace</sender>
+			<signal>toggled(bool)</signal>
+			<receiver>Combo_ModeReplacePivot</receiver>
+			<slot>setEnabled(bool)</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>49</x>
+					<y>350</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>325</x>
+					<y>350</y>
+				</hint>
+			</hints>
+		</connection>
+	</connections>
+	<buttongroups>
+		<buttongroup name="ButtonGroup_Mode"/>
+	</buttongroups>
+</ui>

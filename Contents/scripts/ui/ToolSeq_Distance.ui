@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>WindowMain</class>
+	<widget class="QMainWindow" name="WindowMain">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>320</width>
+				<height>252</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>Distance</string>
+		</property>
+		<property name="windowIcon">
+			<iconset>
+				<normaloff>../icons/ToolSeq.svg</normaloff>../icons/ToolSeq.svg
+			</iconset>
+		</property>
+		<widget class="QWidget" name="Widget_00">
+			<layout class="QVBoxLayout" name="verticalLayout">
+				<property name="spacing">
+					<number>2</number>
+				</property>
+				<property name="leftMargin">
+					<number>2</number>
+				</property>
+				<property name="topMargin">
+					<number>2</number>
+				</property>
+				<property name="rightMargin">
+					<number>2</number>
+				</property>
+				<property name="bottomMargin">
+					<number>2</number>
+				</property>
+				<item>
+					<widget class="QWidget" name="Widget_01" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout">
+							<property name="spacing">
+								<number>10</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QLabel" name="label_6">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Items</string>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QLabel" name="label_5">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>:</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QLabel" name="Label_ItemsCount">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>0</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_02" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_4">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QPlainTextEdit" name="Text_Items">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="lineWrapMode">
+										<enum>QPlainTextEdit::NoWrap</enum>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="Line" name="Widget_03">
+						<property name="sizePolicy">
+							<sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+								<horstretch>0</horstretch>
+								<verstretch>0</verstretch>
+							</sizepolicy>
+						</property>
+						<property name="minimumSize">
+							<size>
+								<width>0</width>
+								<height>10</height>
+							</size>
+						</property>
+						<property name="frameShadow">
+							<enum>QFrame::Plain</enum>
+						</property>
+						<property name="lineWidth">
+							<number>2</number>
+						</property>
+						<property name="orientation">
+							<enum>Qt::Horizontal</enum>
+						</property>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_04" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_5">
+							<property name="spacing">
+								<number>4</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QDoubleSpinBox" name="Float_DistanceX">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignCenter</set>
+									</property>
+									<property name="readOnly">
+										<bool>true</bool>
+									</property>
+									<property name="buttonSymbols">
+										<enum>QAbstractSpinBox::NoButtons</enum>
+									</property>
+									<property name="decimals">
+										<number>6</number>
+									</property>
+									<property name="minimum">
+										<double>-9999999.000000000000000</double>
+									</property>
+									<property name="maximum">
+										<double>9999999.000000000000000</double>
+									</property>
+									<property name="value">
+										<double>-1.000000000000000</double>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QDoubleSpinBox" name="Float_DistanceY">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignCenter</set>
+									</property>
+									<property name="readOnly">
+										<bool>true</bool>
+									</property>
+									<property name="buttonSymbols">
+										<enum>QAbstractSpinBox::NoButtons</enum>
+									</property>
+									<property name="decimals">
+										<number>6</number>
+									</property>
+									<property name="minimum">
+										<double>-9999999.000000000000000</double>
+									</property>
+									<property name="maximum">
+										<double>9999999.000000000000000</double>
+									</property>
+									<property name="value">
+										<double>-1.000000000000000</double>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QDoubleSpinBox" name="Float_DistanceZ">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignCenter</set>
+									</property>
+									<property name="readOnly">
+										<bool>true</bool>
+									</property>
+									<property name="buttonSymbols">
+										<enum>QAbstractSpinBox::NoButtons</enum>
+									</property>
+									<property name="decimals">
+										<number>6</number>
+									</property>
+									<property name="minimum">
+										<double>-9999999.000000000000000</double>
+									</property>
+									<property name="maximum">
+										<double>9999999.000000000000000</double>
+									</property>
+									<property name="value">
+										<double>-1.000000000000000</double>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QDoubleSpinBox" name="Float_DistanceXYZ">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignCenter</set>
+									</property>
+									<property name="readOnly">
+										<bool>true</bool>
+									</property>
+									<property name="buttonSymbols">
+										<enum>QAbstractSpinBox::NoButtons</enum>
+									</property>
+									<property name="decimals">
+										<number>6</number>
+									</property>
+									<property name="minimum">
+										<double>-9999999.000000000000000</double>
+									</property>
+									<property name="maximum">
+										<double>9999999.000000000000000</double>
+									</property>
+									<property name="value">
+										<double>-1.000000000000000</double>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_05" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_3">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QPushButton" name="Button_CalculateDistance">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Calculate Cumulative Distances</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="Line" name="Widget_06">
+						<property name="sizePolicy">
+							<sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+								<horstretch>0</horstretch>
+								<verstretch>0</verstretch>
+							</sizepolicy>
+						</property>
+						<property name="minimumSize">
+							<size>
+								<width>0</width>
+								<height>10</height>
+							</size>
+						</property>
+						<property name="frameShadow">
+							<enum>QFrame::Plain</enum>
+						</property>
+						<property name="lineWidth">
+							<number>2</number>
+						</property>
+						<property name="orientation">
+							<enum>Qt::Horizontal</enum>
+						</property>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_07" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_2" stretch="3,2,3">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QPushButton" name="Button_SelectMinEdges">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Select Min Edges</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QDoubleSpinBox" name="Float_Precision">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignCenter</set>
+									</property>
+									<property name="buttonSymbols">
+										<enum>QAbstractSpinBox::PlusMinus</enum>
+									</property>
+									<property name="decimals">
+										<number>6</number>
+									</property>
+									<property name="minimum">
+										<double>0.000100000000000</double>
+									</property>
+									<property name="maximum">
+										<double>99999.000000000000000</double>
+									</property>
+									<property name="singleStep">
+										<double>0.000100000000000</double>
+									</property>
+									<property name="value">
+										<double>0.000100000000000</double>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QPushButton" name="Button_SelectMaxEdges">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Select Max Edges</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="Line" name="Widget_08">
+						<property name="sizePolicy">
+							<sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+								<horstretch>0</horstretch>
+								<verstretch>0</verstretch>
+							</sizepolicy>
+						</property>
+						<property name="minimumSize">
+							<size>
+								<width>0</width>
+								<height>10</height>
+							</size>
+						</property>
+						<property name="frameShadow">
+							<enum>QFrame::Plain</enum>
+						</property>
+						<property name="lineWidth">
+							<number>2</number>
+						</property>
+						<property name="orientation">
+							<enum>Qt::Horizontal</enum>
+						</property>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_09" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1,1,2">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QRadioButton" name="Radio_Min">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Min</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QRadioButton" name="Radio_Max">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Max</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QRadioButton" name="Radio_Cen">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Cen</string>
+									</property>
+									<property name="checked">
+										<bool>true</bool>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QCheckBox" name="Check_TargetSelected">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Target Selected</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_10" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_7">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QPushButton" name="Button_MoveX">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>MoveX</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QPushButton" name="Button_MoveY">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>MoveY</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QPushButton" name="Button_MoveZ">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>MoveZ</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+			</layout>
+		</widget>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>
