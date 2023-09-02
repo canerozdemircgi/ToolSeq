@@ -1,0 +1,12 @@
+*.editorconfig
+*.gitignore
+*.md
+*.mel
+*.py
+*.qrc
+*.qss
+*.svg
+*.txt
+*.ui
+*.url
+*.xml
