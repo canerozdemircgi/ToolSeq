@@ -1,0 +1,1305 @@
+global proc shelf_Caner () {
+	global string $gBuffStr;
+	global string $gBuffStr0;
+	global string $gBuffStr1;
+
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Select Hierarchy"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Select Hierarchy"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "SelHie"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Select.svg"
+		-image1 "ToolSeq_Select.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "SelectHierarchy"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Delete History"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Delete History"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "DelHis"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "History.svg"
+		-image1 "History.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "DeleteHistory"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Freeze Transformations"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Freeze Transformations"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "FreTra"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Freeze.svg"
+		-image1 "ToolSeq_Freeze.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "FreezeTransformations"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Freeze Transformations Options" ( "FreezeTransformationsOptions" )
+		-mi "ToolSeq_Freeze" ( "import ToolSeq_Freeze\nToolSeq_Freeze.ToolSeq_Freeze()" )
+		-mip 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Center Pivot"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Center Pivot"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "CenPiv"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Pivot.svg"
+		-image1 "ToolSeq_Pivot.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "CenterPivot"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Zero Pivot" ( "xform -worldSpace -absolute -pivots 0 0 0" )
+		-mi "ToolSeq_Pivot" ( "import ToolSeq_Pivot\nToolSeq_Pivot.ToolSeq_Pivot()" )
+		-mip 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Cleanup"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Cleanup"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Clean"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Cleanup.svg"
+		-image1 "Cleanup.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "CleanupPolygon"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Cleanup Options" ( "CleanupPolygonOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 24
+		-enable 1
+		-width 27
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation ""
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label ""
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "_Separator.svg"
+		-image1 "_Separator.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Loop Edges"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Loop Edges"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Loop"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Loop.svg"
+		-image1 "Loop.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "polySelectEdgesEveryN edgeLoop 1"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Loop Pattern Edges" ( "polySelectEdgesPattern edgeLoopPattern" )
+		-mi "ToolSeq_Select" ( "import ToolSeq_Select\nToolSeq_Select.ToolSeq_Select()" )
+		-mip 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Ring Edges"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Ring Edges"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Ring"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Ring.svg"
+		-image1 "Ring.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "polySelectEdgesEveryN edgeRing 1"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Ring Pattern Edges" ( "polySelectEdgesPattern edgeRingPattern" )
+		-mi "ToolSeq_Select" ( "import ToolSeq_Select\nToolSeq_Select.ToolSeq_Select()" )
+		-mip 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Distance"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Distance"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Dist"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Distance.svg"
+		-image1 "ToolSeq_Distance.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Distance\nToolSeq_Distance.ToolSeq_Distance()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Extrude"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Extrude"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Extru"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Extrude.svg"
+		-image1 "Extrude.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "PolyExtrude"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Extrude Options" ( "PolyExtrudeOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Bevel"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Bevel"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Bevel"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Bevel.svg"
+		-image1 "Bevel.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "BevelPolygon"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Bevel Options" ( "BevelPolygonOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Merge To Center"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Merge To Center"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "MergC"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Merge.svg"
+		-image1 "Merge.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "MergeToCenter"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Merge" ( "PolyMerge" )
+		-mi "Merge Options" ( "PolyMergeOptions" )
+		-mi "Interactive Merge Tool" ( "MergeVertexTool" )
+		-mi "Interactive Merge Tool Options" ( "MergeVertexToolOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Bridge"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Bridge"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Bridge"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Bridge.svg"
+		-image1 "Bridge.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "BridgeOrFill"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Bridge Options" ( "BridgeEdgeOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Simplify Curve"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Simplify Curve"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "SimpCr"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Formula.svg"
+		-image1 "ToolSeq_Formula.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import gf_simplifyCurve\ngf_simplifyCurve.simplifyCurve().UI()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Disable Drawing Overrides" ( "from maya import cmds as maya_cmds\nfor node in maya_cmds.ls(type=('shape', 'transform')):\n\ttry:\n\t\tmaya_cmds.setAttr('%s.overrideEnabled' % node, False)\n\t\tmaya_cmds.setAttr('%s.overrideDisplayType' % node, 0)\n\texcept:\n\t\tpass" )
+		-mip 0
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 24
+		-enable 1
+		-width 27
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation ""
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label ""
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "_Separator.svg"
+		-image1 "_Separator.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Component Editor"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Component Editor"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "CmpEd"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Component.svg"
+		-image1 "Component.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "ComponentEditor"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "ToolSeq_Displacement" ( "import ToolSeq_Displacement\nToolSeq_Displacement.ToolSeq_Displacement()" )
+		-mi "ToolSeq_Formula" ( "import ToolSeq_Formula\nToolSeq_Formula.ToolSeq_Formula()" )
+		-mip 0
+		-mip 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Unaverage"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Unaverage"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Unaver"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Unaverage.svg"
+		-image1 "ToolSeq_Unaverage.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Unaverage\nToolSeq_Unaverage.ToolSeq_Unaverage()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Duplicate Special"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Duplicate Special"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "DupSp"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Displacement.svg"
+		-image1 "ToolSeq_Displacement.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "DuplicateSpecial"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Duplicate Special Options" ( "DuplicateSpecialOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Instance To Object"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Instance To Object"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Ins2Obj"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Uninstance.svg"
+		-image1 "ToolSeq_Uninstance.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "ConvertInstanceToObject"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Nurbs To Polygons" ( "NURBSToPolygons" )
+		-mi "Nurbs To Polygons Options" ( "NURBSToPolygonsOptions" )
+		-mi "ToolSeq_Uninstance" ( "import ToolSeq_Uninstance\nToolSeq_Uninstance.ToolSeq_Uninstance()" )
+		-mip 2
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Randomizer"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Randomizer"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Rand"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Randomizer.svg"
+		-image1 "ToolSeq_Randomizer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Randomizer\nToolSeq_Randomizer.ToolSeq_Randomizer()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 24
+		-enable 1
+		-width 27
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation ""
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label ""
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "_Separator.svg"
+		-image1 "_Separator.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Hypershade"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Hypershade"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Hypers"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Hypershade.svg"
+		-image1 "Hypershade.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "HypershadeWindow"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "UV Editor"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "UV Editor"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "UvEdit"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_UV.svg"
+		-image1 "ToolSeq_UV.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "TextureViewWindow"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "UV Set Editor" ( "UVSetEditor" )
+		-mi "ToolSeq_UV" ( "import ToolSeq_UV\nToolSeq_UV.ToolSeq_UV()" )
+		-mip 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Transfer Attributes"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Transfer Attributes"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "TransA"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Transfer.svg"
+		-image1 "Transfer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "TransferAttributes"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Transfer Attributes Options" ( "performTransferAttributes 1" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Explode"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Explode"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Explod"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Explode.svg"
+		-image1 "ToolSeq_Explode.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Explode\nToolSeq_Explode.ToolSeq_Explode()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 24
+		-enable 1
+		-width 27
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation ""
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label ""
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "_Separator.svg"
+		-image1 "_Separator.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Soften Edges"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Soften Edges"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Soften"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Soft.svg"
+		-image1 "Soft.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "PolygonSoftenEdge"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Select Soft Edges" ( "ConvertSelectionToEdges;\npolySelectConstraint -mode 2 -type 0x8000 -smoothness 2;\nresetPolySelectConstraint" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Harden Edges"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Harden Edges"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Harden"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Hard.svg"
+		-image1 "Hard.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "PolygonHardenEdge"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Select Hard Edges" ( "ConvertSelectionToEdges;\npolySelectConstraint -mode 2 -type 0x8000 -smoothness 1;\nresetPolySelectConstraint" )
+		-mi "Select Border Edges" ( "ConvertSelectionToEdges;\npolySelectConstraint -mode 2 -type 0x8000 -where 1;\nresetPolySelectConstraint" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Set Normal Angle"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Set Normal Angle"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Angle"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Compass.svg"
+		-image1 "Compass.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "PolygonSoftenHarden"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Set Normal Angle Options" ( "PolygonSoftenHardenOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Reverse Polygons"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Reverse Polygons"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Revers"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Reverse.svg"
+		-image1 "Reverse.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "ReversePolygonNormals"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Reverse Polygons Options" ( "ReversePolygonNormalsOptions" )
+		-mi "Reverse Curves" ( "ReverseCurve" )
+		-mi "Reverse Curves Options" ( "ReverseCurveOptions" )
+		-mi "Reverse Surfaces" ( "ReverseSurfaceDirection" )
+		-mi "Reverse Surfaces Options" ( "ReverseSurfaceDirectionOptions" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 24
+		-enable 1
+		-width 27
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation ""
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label ""
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "_Separator.svg"
+		-image1 "_Separator.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "Full Screen"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "Full Screen"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "FullSc"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "Full Screen.svg"
+		-image1 "Full Screen.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "window -e -titleBar (!`window -q -titleBar $gMainWindow`) $gMainWindow"
+		-sourceType "mel"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Developer"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Developer"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Devel"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Developer.svg"
+		-image1 "ToolSeq_Developer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Developer\nToolSeq_Developer.ToolSeq_Developer()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_ReNamer"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_ReNamer"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "RName"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_ReNamer.svg"
+		-image1 "ToolSeq_ReNamer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_ReNamer\nToolSeq_ReNamer.ToolSeq_ReNamer()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+		-mi "ToolSeq_DupNamer" ( "import ToolSeq_DupNamer\nToolSeq_DupNamer.ToolSeq_DupNamer()" )
+		-mip 0
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_ItemHud"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_ItemHud"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "ItmHud"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_ItemHud.svg"
+		-image1 "ToolSeq_ItemHud.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_ItemHud\nToolSeq_ItemHud.ToolSeq_ItemHud()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+		-mi "Toggle Poly Count" ( "TogglePolyCount" )
+		-mi "Toggle Poly Count Options" ( "performPolyCountOptions 1" )
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Cameras"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Cameras"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Cam"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Cameras.svg"
+		-image1 "ToolSeq_Cameras.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Cameras\nToolSeq_Cameras.ToolSeq_Cameras()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+
+}

@@ -1,0 +1,13 @@
+*.editorconfig
+*.gitignore
+*.md
+*.mel
+*.nojekyll
+*.py
+*.qrc
+*.qss
+*.svg
+*.txt
+*.ui
+*.url
+*.xml
