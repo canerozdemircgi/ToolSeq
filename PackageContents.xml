@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0"
+	ProductType="Application"
+	AutodeskProduct="Maya"
+
+	Name="ToolSeq"
+	Description=""
+	AppVersion="1.3.0"
+	Author="Caner Özdemir"
+
+	AppNameSpace="com.canerozdemircgi.autodesk.maya.toolseq"
+	HelpFile=""
+	OnlineDocumentation="https://canerozdemircgi.github.io/website/?path=Main/Video/ToolSeq"
+
+	ProductCode="{5F413FCD-000A-46D7-8CF3-3DA5C279AE62}"
+	UpgradeCode="{5829415B-54CE-4592-88F3-51FAF2F64B38}">
+
+	<CompanyDetails
+		Name="Caner Özdemir CGI"
+		Phone=""
+		Url="https://canerozdemircgi.github.io/website/"
+		Email="canerozdemir.mail@gmail.com"
+	/>
+
+	<RuntimeRequirements SupportPath="" OS="win64|macOS|linux" Platform="Maya" SeriesMin="2022"/>
+
+	<Components>
+		<RuntimeRequirements SupportPath="" OS="win64|macOS|linux" Platform="Maya" SeriesMin="2022"/>
+
+		<MayaEnv expr="MAYA_SCRIPT_PATH+:=shelves"/>
+		<ComponentEntry ModuleName="./Contents/shelves/shelf_Caner.mel"/>
+		<ComponentEntry ModuleName="./Contents/shelves/shelf_ToolSeq.mel"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_load.mel"/>
+
+		<MayaEnv expr="MAYA_PLUG_IN_PATH+:=plug-ins"/>
+		<ComponentEntry ModuleName="./Contents/plug-ins/ToolSeq_Displacement.py"/>
+		<ComponentEntry ModuleName="./Contents/plug-ins/ToolSeq_Formula.py"/>
+		<ComponentEntry ModuleName="./Contents/plug-ins/ToolSeq_Freeze.py"/>
+		<ComponentEntry ModuleName="./Contents/plug-ins/ToolSeq_Randomizer.py"/>
+
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Cameras.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Developer.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Displacement.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Distance.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Explode.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Formula.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Freeze.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_ItemHud.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_DupNamer.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Pivot.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Randomizer.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_ReNamer.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Select.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Unaverage.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_Uninstance.py"/>
+		<ComponentEntry ModuleName="./Contents/scripts/ToolSeq_UV.py"/>
+
+		<ComponentEntry ModuleName="./Contents/icons/Bevel.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Bridge.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Cleanup.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Compass.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Component.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Extrude.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Full Screen.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Hard.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/History.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Hypershade.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Loop.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Merge.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Reverse.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Ring.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Soft.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Cameras.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Developer.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Displacement.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Distance.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Explode.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Formula.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Freeze.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_ItemHud.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_DupNamer.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Pivot.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Randomizer.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_ReNamer.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Select.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Unaverage.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_Uninstance.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/ToolSeq_UV.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/Transfer.svg"/>
+		<ComponentEntry ModuleName="./Contents/icons/_Separator.svg"/>
+
+	</Components>
+
+</ApplicationPackage>
