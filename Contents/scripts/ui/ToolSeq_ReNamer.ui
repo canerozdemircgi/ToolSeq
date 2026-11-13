@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>WindowMain</class>
+	<widget class="QMainWindow" name="WindowMain">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>250</width>
+				<height>189</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>ReNamer</string>
+		</property>
+		<property name="windowIcon">
+			<iconset>
+				<normaloff>../icons/ToolSeq.svg</normaloff>../icons/ToolSeq.svg
+			</iconset>
+		</property>
+		<widget class="QWidget" name="Widget_00">
+			<layout class="QVBoxLayout" name="verticalLayout">
+				<property name="spacing">
+					<number>2</number>
+				</property>
+				<property name="leftMargin">
+					<number>2</number>
+				</property>
+				<property name="topMargin">
+					<number>2</number>
+				</property>
+				<property name="rightMargin">
+					<number>2</number>
+				</property>
+				<property name="bottomMargin">
+					<number>2</number>
+				</property>
+				<item>
+					<widget class="QWidget" name="Widget_01" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_5">
+							<property name="spacing">
+								<number>10</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QLabel" name="label_6">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Transforms</string>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QLabel" name="label_5">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>:</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QLabel" name="Label_TransformsCount">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>0</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_02" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_6">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QPlainTextEdit" name="Text_Transforms">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="lineWrapMode">
+										<enum>QPlainTextEdit::NoWrap</enum>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_03" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_7">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QCheckBox" name="Check_CaseSensitive">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Case Sensitive</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QCheckBox" name="Check_Regex">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Regex</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_04" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_2">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QLineEdit" name="Line_Search">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignCenter</set>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_05" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout_3">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QLineEdit" name="Line_Replace">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="alignment">
+										<set>Qt::AlignCenter</set>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QWidget" name="Widget_06" native="true">
+						<layout class="QHBoxLayout" name="horizontalLayout">
+							<property name="spacing">
+								<number>2</number>
+							</property>
+							<property name="leftMargin">
+								<number>0</number>
+							</property>
+							<property name="topMargin">
+								<number>0</number>
+							</property>
+							<property name="rightMargin">
+								<number>0</number>
+							</property>
+							<property name="bottomMargin">
+								<number>0</number>
+							</property>
+							<item>
+								<widget class="QPushButton" name="Button_Select">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Select</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QPushButton" name="Button_Rename">
+									<property name="sizePolicy">
+										<sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+											<horstretch>0</horstretch>
+											<verstretch>0</verstretch>
+										</sizepolicy>
+									</property>
+									<property name="minimumSize">
+										<size>
+											<width>0</width>
+											<height>25</height>
+										</size>
+									</property>
+									<property name="text">
+										<string>Rename</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+			</layout>
+		</widget>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>

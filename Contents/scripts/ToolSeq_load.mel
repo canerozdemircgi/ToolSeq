@@ -1,0 +1,11 @@
+if (!`shelfLayout -exists "ToolSeq"`)
+{
+	addNewShelfTab "ToolSeq";
+	shelfTabLayout -e -selectTab "ToolSeq" $gShelfTopLevel;
+}
+
+if (!`shelfLayout -exists "Caner"`)
+{
+	addNewShelfTab "Caner";
+	shelfTabLayout -e -selectTab "Caner" $gShelfTopLevel;
+}

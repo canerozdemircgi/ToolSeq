@@ -1,0 +1,5 @@
+<RCC>
+	<qresource prefix="/">
+		<file>font/SourceCodeVF-Upright.ttf</file>
+	</qresource>
+</RCC>

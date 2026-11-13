@@ -1,0 +1,567 @@
+global proc shelf_ToolSeq () {
+	global string $gBuffStr;
+	global string $gBuffStr0;
+	global string $gBuffStr1;
+
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Cameras"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Cameras"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Cam"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Cameras.svg"
+		-image1 "ToolSeq_Cameras.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Cameras\nToolSeq_Cameras.ToolSeq_Cameras()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Developer"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Developer"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Dev"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Developer.svg"
+		-image1 "ToolSeq_Developer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Developer\nToolSeq_Developer.ToolSeq_Developer()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Displacement"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Displacement"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Dsplc"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Displacement.svg"
+		-image1 "ToolSeq_Displacement.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Displacement\nToolSeq_Displacement.ToolSeq_Displacement()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Distance"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Distance"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Dist"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Distance.svg"
+		-image1 "ToolSeq_Distance.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Distance\nToolSeq_Distance.ToolSeq_Distance()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_DupNamer"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_DupNamer"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "DName"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_DupNamer.svg"
+		-image1 "ToolSeq_DupNamer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_DupNamer\nToolSeq_DupNamer.ToolSeq_DupNamer()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Explode"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Explode"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Exp"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Explode.svg"
+		-image1 "ToolSeq_Explode.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Explode\nToolSeq_Explode.ToolSeq_Explode()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Formula"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Formula"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Formu"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Formula.svg"
+		-image1 "ToolSeq_Formula.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Formula\nToolSeq_Formula.ToolSeq_Formula()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Freeze"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Freeze"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Frz"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Freeze.svg"
+		-image1 "ToolSeq_Freeze.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Freeze\nToolSeq_Freeze.ToolSeq_Freeze()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_ItemHud"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_ItemHud"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "ItHud"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_ItemHud.svg"
+		-image1 "ToolSeq_ItemHud.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_ItemHud\nToolSeq_ItemHud.ToolSeq_ItemHud()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Pivot"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Pivot"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Piv"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Pivot.svg"
+		-image1 "ToolSeq_Pivot.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Pivot\nToolSeq_Pivot.ToolSeq_Pivot()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Randomizer"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Randomizer"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Rand"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Randomizer.svg"
+		-image1 "ToolSeq_Randomizer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Randomizer\nToolSeq_Randomizer.ToolSeq_Randomizer()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_ReNamer"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_ReNamer"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "RName"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_ReNamer.svg"
+		-image1 "ToolSeq_ReNamer.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_ReNamer\nToolSeq_ReNamer.ToolSeq_ReNamer()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Select"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Select"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Sel"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Select.svg"
+		-image1 "ToolSeq_Select.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Select\nToolSeq_Select.ToolSeq_Select()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Unaverage"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Unaverage"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Unave"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Unaverage.svg"
+		-image1 "ToolSeq_Unaverage.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Unaverage\nToolSeq_Unaverage.ToolSeq_Unaverage()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_Uninstance"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_Uninstance"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "Unins"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_Uninstance.svg"
+		-image1 "ToolSeq_Uninstance.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_Uninstance\nToolSeq_Uninstance.ToolSeq_Uninstance()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-flexibleWidthType 3
+		-flexibleWidthValue 32
+		-enable 1
+		-width 35
+		-height 35
+		-manage 1
+		-visible 1
+		-preventOverride 0
+		-annotation "ToolSeq_UV"
+		-enableBackground 0
+		-backgroundColor 0 0 0
+		-highlightColor 0.321569 0.521569 0.65098
+		-align "center"
+		-label "ToolSeq_UV"
+		-labelOffset 0
+		-rotation 0
+		-flipX 0
+		-flipY 0
+		-useAlpha 1
+		-font "plainLabelFont"
+		-imageOverlayLabel "UV"
+		-overlayLabelColor 0.8 0.8 0.8
+		-overlayLabelBackColor 0 0 0 0.5
+		-image "ToolSeq_UV.svg"
+		-image1 "ToolSeq_UV.svg"
+		-style "iconOnly"
+		-marginWidth 0
+		-marginHeight 0
+		-command "import ToolSeq_UV\nToolSeq_UV.ToolSeq_UV()"
+		-sourceType "python"
+		-commandRepeatable 1
+		-flat 1
+	;
+
+}
